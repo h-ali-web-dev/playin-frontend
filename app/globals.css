@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* details {
+    user-select: none;
+
+    & summary svg {
+        transform: rotate(90deg);
+    }
+}
+
+details[open] {
+    & summary svg {
+        transform: rotate(-90deg);
+
+    }
+
+}
+
+
+details[open] summary~* {
+    animation: ease-opacity-t-b .5s ease
+}
+
+summary {
+    cursor: pointer;
+}
+
+svg {
+    transition: all 0.3s;
+} */
+
+/* TO JE TO - TO JE TAJ */
+/* summary::-webkit-details-marker {
+    display: none;
+}
+
+:focus {
+    outline: none;
+}
+
+.show-more {
+    display: flex;
+    padding-top: 40px;
+
+    a {
+        display: inline-block;
+        margin: 20px auto;
+        padding: 12px 12px;
+        color: green;
+        text-decoration: none;
+        border: 1px solid rgba(green, .8);
+        border-radius: 100px;
+    }
+} */
