@@ -31,14 +31,12 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      {/* <Accordian /> */}
       <Hero />
       <Gameplan />
       <Ecosystem />
       <Details />
       <Form />
       <Footer />
-      <AccordionOLD />
       {/* <Button>Normal Button</Button>
       <Button $primary>Primary Button</Button> */}
     </>

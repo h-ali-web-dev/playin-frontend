@@ -30,15 +30,15 @@ export default function NavBar() {
             <li
               key={link.name}
               className={`${
-                path === link.link ? "text-neon-green" : "text-slate-600"
-              } hover:text-neon-green`}
+                path === link.link ? "text-playin-green" : "text-slate-600"
+              } hover:text-playin-green`}
             >
               {link.name}
             </li>
           ))}
         </ul>
       </div>
-      <div className="text-black bg-neon-green py-4 px-8 -skew-x-12 border border-neon-green hover:text-white hover:bg-transparent transition duration-500">
+      <div className="text-black bg-playin-green py-4 px-8 -skew-x-12 border border-playin-green hover:text-white hover:bg-transparent transition duration-500">
         Get Started
       </div>
     </div>

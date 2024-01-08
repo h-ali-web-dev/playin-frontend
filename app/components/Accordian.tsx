@@ -48,11 +48,15 @@ const AccordionSection = ({
     <div className="border border-white my-4">
       <button
         type="button"
-        className="flex justify-between w-full px-4 py-2 text-lg font-medium text-left text-gray-700 bg-transparent rounded-lg  focus:outline-none"
+        className={`${
+          isOpen ? "bg-playin-green" : "bg-transparent"
+        } " w-full px-4 py-2 text-lg font-medium text-left text-gray-700 focus:outline-none" `}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-white">{title}</span>
-        <span className="text-white">{isOpen ? "-" : "+"}</span>
+        <div className="flex justify-between">
+          <span className="text-white">{title}</span>
+          <span className="text-white">{isOpen ? "-" : "+"}</span>
+        </div>
       </button>
       {isOpen && <div className="p-4 ml-4">{children}</div>}
     </div>
@@ -71,16 +75,19 @@ const Play2Earn = () => {
           className="inline mr-2"
         />
         You automatically earn a set amount of{" "}
-        <span className="text-neon-green">PLEX</span> points just by owning a
-        <span className="text-neon-green"> COLLECTIBLE</span>.
+        <span className="text-playin-green">PLEX</span> points just by owning a
+        <span className="text-playin-green"> COLLECTIBLE</span>.
       </div>
       <div>Play by Play. All the time, Everytime.</div>
       <ul className="list-disc">
         <li>
-          There are <span className="text-neon-green">5 tiers</span> of PlayIn
+          There are <span className="text-playin-green">5 tiers</span> of PlayIn
           Collectibles <br />
-          <span className="font-semibold">NORMAL</span>, COOL,{" "}
-          <span className="text-neon-green">RARE</span>, EPIC, ELITE <br />
+          <span className="font-semibold">NORMAL</span>,{" "}
+          <span className="text-playin-blue">COOL</span>,{" "}
+          <span className="text-playin-green">RARE</span>,{" "}
+          <span className="text-playin-purple">EPIC</span>,{" "}
+          <span className="text-playin-gold">ELITE</span> <br />
           The higher tier the item, the higher the bonuses you earn on your
           gameplay
         </li>

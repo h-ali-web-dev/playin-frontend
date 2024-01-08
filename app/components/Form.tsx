@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Form() {
   return (
     <div>
-      <h2 className="text-neon-green text-6xl font-thin text-center">
+      <h2 className="text-playin-green text-6xl font-thin text-center">
         PLAYIN EARLY <br />
         ACCESS CARDS
       </h2>
@@ -26,7 +26,7 @@ export default function Form() {
             placeholder="Referral Code"
             className="w-full border border-white p-5 bg-transparent text-white"
           />
-          <button type="submit" className="bg-neon-green text-2xl px-12 ml-6">
+          <button type="submit" className="bg-playin-green text-2xl px-12 ml-6">
             Submit
           </button>
         </div>
@@ -37,7 +37,7 @@ export default function Form() {
       </div>
       <div className="mx-10 flex flex-row justify-center space-x-10">
         <div className="text-right max-w-md w-full">
-          <div className="text-neon-green text-3xl">
+          <div className="text-playin-green text-3xl">
             HOLDERS ARE ELIGIBLE FOR <br />
             EXCLUSIVE EARLY ACCESS, <br />
             GOVERNANCE TOKEN <br />

@@ -14,7 +14,10 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors:{
-        'neon-green': '#49FFA4'
+        'playin-green': '#49FFA4',
+        'playin-blue': '#17C8FF',
+        'playin-purple': '#7D3D96',
+        'playin-gold': '#C9A623'
       }
     },
   },
