@@ -17,7 +17,8 @@ const config: Config = {
         'playin-green': '#49FFA4',
         'playin-blue': '#17C8FF',
         'playin-purple': '#7D3D96',
-        'playin-gold': '#C9A623'
+        'playin-gold': '#C9A623',
+        'playin-danger': '#E61C53'
       }
     },
   },

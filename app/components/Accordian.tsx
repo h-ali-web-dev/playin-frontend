@@ -54,8 +54,12 @@ const AccordionSection = ({
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="flex justify-between">
-          <span className="text-white">{title}</span>
-          <span className="text-white">{isOpen ? "-" : "+"}</span>
+          <span className={`${isOpen ? "text-black" : "text-white"}`}>
+            {title}
+          </span>
+          <span className="text-white font-extrabold">
+            {isOpen ? "-" : "+"}
+          </span>
         </div>
       </button>
       {isOpen && <div className="p-4 ml-4">{children}</div>}
@@ -92,18 +96,32 @@ const Play2Earn = () => {
           gameplay
         </li>
         <li>
-          You can PURCHASE Collectibles that are listed on the PlayIn
-          marketplace. <br />
-          You can SELL your own rare Collectibles after upgrading them.
+          You can <span className="font-bold">PURCHASE </span>
+          Collectibles that are listed on the PlayIn marketplace. <br />
+          You can <span className="font-bold">SELL </span> your own rare
+          Collectibles after upgrading them.
         </li>
       </ul>
-      <div>Using CONSUMABLES to elevate your PlayIn experience</div>
+      <div>
+        <Image
+          src={"/assets/blue-star.svg"}
+          alt=""
+          width={16}
+          height={16}
+          className="inline mr-2"
+        />
+        Using <span className="text-playin-blue">CONSUMABLES </span> to elevate
+        your PlayIn experience
+      </div>
       <ul className="list-disc">
         <li>
-          "DRIPS" can be used to upgrade your Collectible, without buying a new
-          one.
+          "<span className="text-playin-blue">DRIPS</span>" can be used to
+          upgrade your Collectible, without buying a new one.
         </li>
-        <li>"SPLASHES" are used to clean up your wearables.</li>
+        <li>
+          "<span className="text-playin-blue">SPLASHES</span>" are used to clean
+          up your wearables.
+        </li>
       </ul>
       <div>
         Keep your Collectibles pristine to earn the maximum amount of PLEX
@@ -116,24 +134,44 @@ const Play2Earn = () => {
 const Sentiment = () => {
   return (
     <div>
-      <div>SENTIMENT</div>
+      <Image
+        src={"/assets/blue-star.svg"}
+        alt=""
+        width={16}
+        height={16}
+        className="inline mr-2"
+      />
+      <div className="text-playin-green inline">
+        WE'LL LET YOU IN ON A SECRET...
+      </div>
       <div>
         You might not know this, but the largest sportsbooks bake egregious fees
         into the odds they offer to you. You never truly win.
       </div>
       <ul className="list-disc">
         <li>
-          STOP GETTING FLEECED and BET WITH PLAYIN.
+          <span className="text-playin-danger">STOP GETTING FLEECED </span> and
+          <span className="text-playin-green"> BET WITH PLAYIN.</span>
           <br /> Why take unappealing odds when you can set your own?
         </li>
       </ul>
       <div>
-        Our DYNAMIC ODDS pricing are based on PLAYER-SENTIMENT at any given
+        <Image
+          src={"/assets/blue-star.svg"}
+          alt=""
+          width={16}
+          height={16}
+          className="inline mr-2"
+        />
+        Our <span className="font-bold">DYNAMIC ODDS </span> pricing are based
+        on <span className="font-bold">PLAYER-SENTIMENT </span> at any given
         moment.
       </div>
       <ul className="list-disc">
         <li>
-          This means if you BET RIGHT and you BET EARLY, you GET PAID BIG TIME!
+          This means if you <span className="font-bold">BET RIGHT </span> and
+          you <span className="font-bold">BET EARLY</span>, you{" "}
+          <span className="text-playin-green"> GET PAID BIG TIME</span>!
         </li>
         <li>
           If you feel like you've won enough, take profits early by reselling
@@ -148,25 +186,46 @@ const Oracle = () => {
   return (
     <div>
       <div>
-        Our NOVEL secure blockchain technology REVOLUTIONALIZES the sports
+        <Image
+          src={"/assets/blue-star.svg"}
+          alt=""
+          width={16}
+          height={16}
+          className="inline mr-2"
+        />
+        Our <span className="text-playin-green">NOVEL </span>
+        secure blockchain technology{" "}
+        <span className="text-playin-green">REVOLUTIONALIZES </span> the sports
         betting industry.
       </div>
       <ul className="list-disc">
         <li>
-          We aim to bring offchain bet-outcome verification to a LIVE-FEED
-          ORACLE
+          We aim to bring offchain bet-outcome verification to a{" "}
+          <span className="font-bold">LIVE-FEED ORACLE</span>
         </li>
         <li>Constantly monitoring various sporting-event statistics</li>
         <li>
-          ORACLE VERIFIED SPORT OUTCOMES communicates with our bet-execution
-          smart-contract to INSTANTANEOUSLY settle and distribute player's funds
+          <span className="text-playin-green">
+            ORACLE VERIFIED SPORT OUTCOMES
+          </span>{" "}
+          communicates with our bet-execution smart-contract to
+          <span className="text-playin-green"> INSTANTANEOUSLY</span> settle and
+          distribute player's funds
         </li>
       </ul>
       <div>
-        TLDR: PlayIn's leading blockchain technologies are custom-fitted for a
-        approachable, gamified sports betting experience.
+        <Image
+          src={"/assets/blue-star.svg"}
+          alt=""
+          width={16}
+          height={16}
+          className="inline mr-2"
+        />
+        <span className="text-playin-blue">TLDR</span>: PlayIn's leading
+        blockchain technologies are custom-fitted for a approachable, gamified
+        sports betting experience.
       </div>
-      <div>
+      <div className="text-center text-playin-blue">
         We bring you an experience that you already know and love, but faster,
         safer, cooler.
       </div>
@@ -177,23 +236,38 @@ const Oracle = () => {
 const Autopilot = () => {
   return (
     <div>
-      <div>WINNING SHOULD BE EASIER.</div>
+      <Image
+        src={"/assets/blue-star.svg"}
+        alt=""
+        width={16}
+        height={16}
+        className="inline mr-2"
+      />
+      <span className="text-playin-gold">WINNING SHOULD BE EASIER.</span>
       <div>
-        Expert in Football but not so in Cricket? Delegate $PLAYN to
-        Leaderboard-Pros and EARN PASSIVELY.
+        Expert in Football but not so in Cricket? Delegate{" "}
+        <span className="text-playin-green"> $PLAYN</span> to Leaderboard-Pros
+        and <span className="text-playin-gold"> EARN PASSIVELY</span>.
       </div>
       <ul className="list-disc">
         <li>
-          PlayIn's WINNINGEST BETTORS (Anchors) have a track record that speaks
-          for themselves
+          PlayIn's{" "}
+          <span className="text-playin-green"> WINNINGEST BETTORS</span>{" "}
+          (Anchors) have a track record that speaks for themselves
         </li>
-        <li>Delegate $PLAYN to Anchors in a SECURE DELEGATION CONTRACT</li>
+        <li>
+          Delegate $PLAYN to Anchors in a{" "}
+          <span className="font-bold">SECURE DELEGATION CONTRACT</span>
+        </li>
         <li>
           Anchors have access to additional funds to up their stake, but
-          winnings are SPLIT AUTOMATICALLY between Anchor's wallets and the
-          delegation contract
+          winnings are <span className="font-bold">SPLIT AUTOMATICALLY</span>{" "}
+          between Anchor's wallets and the delegation contract
         </li>
-        <li>All you have to do is sit back and WATCH YOUR $$$ GROW!</li>
+        <li>
+          All you have to do is sit back and{" "}
+          <span className="text-playin-gold">WATCH YOUR $$$ GROW!</span>
+        </li>
       </ul>
     </div>
   );

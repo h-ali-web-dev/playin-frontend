@@ -7,9 +7,6 @@ import Ecosystem from "./components/Ecosystem";
 import Details from "./components/Details";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
-import AccordionOLD from "./components/AccordionOLD";
-
-import Accordian from "./components/Accordian";
 
 const Button = styled.button<{ $primary?: boolean }>`
   background: transparent;
